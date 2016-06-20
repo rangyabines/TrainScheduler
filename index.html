@@ -266,6 +266,9 @@ ul li {
   // Next Train
   var nextTrain = moment().add(tMinutesTillTrain, "minutes")
   console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"))
+
+  $(".trains").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + nextCon + "</td><td>" + minTill + "</td><td>");
+  
 </script>
 </body>
 </html>
