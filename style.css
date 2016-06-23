@@ -1,0 +1,102 @@
+ body {
+  background-color: #f4f1f1;
+  width:100%;
+  height:100%;
+  /*position:fixed;*/
+}
+  .vision{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Biryani', sans-serif;
+    color: #ecf0f1;
+    height: 170px;
+    overflow:hidden;
+  }
+  .train{
+    font-weight:600;
+    overflow:hidden;
+    height:90px;
+    padding: 0 50px;
+
+  &:before {
+    content:'[';
+    left: 0;
+    line-height:70px;
+  }
+  &:after {
+    content:']';
+    position:absolute;
+    right: 0;
+    line-height:70px;
+  }
+  &:after, &:before {
+    position:absolute;
+    top:0;
+    color:#16a085;
+    font-size:42px;
+    animation:3s linear 0s normal none infinite opacity;
+  }
+}
+p {
+  /*display: inline;*/
+  float:left;
+  margin:0;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 800;
+  font-family: 'Biryani', sans-serif;;
+  text-shadow: 0 1px 0 gray, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+ul {
+  margin-top:0;
+  padding-left:830px;
+  text-align:left;
+  list-style:none;
+  animation:6s linear 0s normal none infinite change;
+  font-weight: 800;
+}
+
+ul li {
+  line-height:80px;
+  margin:0;
+}
+
+@keyframes opacity {
+  0%, 100%   {opacity:0;}
+  50%  {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100%   {transform:translateY(0);}
+  17%,29%  {transform:translateY(-25%);}
+  34%,46%  {transform:translateY(-50%);}
+  51%,63%  {transform:translateY(-75%);}
+  68%,80%  {transform:translateY(-50%);}
+  85%,97%  {transform:translateY(-25%);}
+}
+#container{
+  margin-top: 20%;
+}
+#ontime{
+  color: #0e8466;
+}
+#delayed{
+  color: #e3d547;
+}
+#canceled{
+  color: #cb213d;
+}
+.fa{
+  padding-right: 5px;
+  color: #171515;
+}
+.panel-primary > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
